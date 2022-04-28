@@ -1,0 +1,52 @@
+@import '../../../../styles/variables.scss';
+// .d_flex{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+.this__day{
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    background: $lite-background;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+}
+
+.top__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    svg {
+        width: 119px;
+        height: 119px;
+    }
+    .this__temp {
+        font-size: 96px;
+        font-weight: 500;
+        color: $primary-color;
+    }
+    .this__day_name {
+        margin: -10px 0px 0px 0px;
+        font-size: 40px;
+        color: #000000;
+    }
+}
+.bottom__block{
+    font-size: 25px;
+    line-height: 30px;
+    color: #939CB0;
+    .this__time{
+        margin-bottom: 14px;
+    }
+    }
+
+    @media screen and (max-width: 1200px){
+        .this__day{
+            min-width: 35%;
+            margin-right: 20px;
+        }
+    }
